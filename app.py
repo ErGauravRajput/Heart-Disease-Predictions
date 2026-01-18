@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 st.set_page_config(
-    page_title="Heart Stroke Prediction",
+    page_title="Heart Disease Prediction",
     page_icon="❤️",
     layout="centered"
 )
@@ -14,11 +14,11 @@ scaler = joblib.load("heart_scaler.pkl")
 expected_columns = joblib.load("heart_columns.pkl")
 
 st.markdown(
-    "<h1 style='text-align:center;'>❤️ Heart Stroke Prediction</h1>",
+    "<h1 style='text-align:center;'>❤️ Heart Disease Prediction</h1>",
     unsafe_allow_html=True
 )
 st.markdown(
-    "<p style='text-align:center; color:gray;'>Provide the details below to check heart stroke risk</p>",
+    "<p style='text-align:center; color:gray;'>Provide the details below to check heart disease risk</p>",
     unsafe_allow_html=True
 )
 
